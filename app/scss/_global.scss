@@ -15,10 +15,18 @@ body {
 
 a {
   text-decoration: none;
+  display: inline-block;
+  color: #fff;
 }
 
 ul,
 li {
   display: inline-block;
   list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }

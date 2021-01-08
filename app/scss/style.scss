@@ -1,5 +1,67 @@
 
-
-
 @import'vars';
 @import'global';
+     
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 40px;
+}
+                                                           
+.header__text {
+  margin-left: auto;
+  margin-right: 50px;
+ font-size: 15px;
+ line-height: 24px; 
+ span{
+   color: $red;
+ }
+}
+
+.header__btn {
+  color: #fff;
+  width: 72px;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.header__btn-login {
+  background-color: $green;
+  margin-right: 8px;
+}
+
+.header__btn-Register {
+  background-color: $red;
+}
+
+.header__menu {
+  background-color: $bg;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.menu__list {
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: 40px;
+    }
+  }
+  a {
+    color: #fff;
+    font-size: 14px;
+  }
+  }
+}
+
+
+
