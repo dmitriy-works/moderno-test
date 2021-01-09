@@ -16,11 +16,14 @@ body {
 a {
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: $text;
+  
 }
 
 ul,
 li {
+  margin: 0;
+  padding: 0;
   display: inline-block;
   list-style: none;
 }
