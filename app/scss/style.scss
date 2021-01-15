@@ -2,6 +2,7 @@
 @import'vars';
 @import'global';
      
+
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -9,51 +10,216 @@
   height: 90px;
 }
 
-.header__text {
+.header__text{
   margin-left: auto;
   margin-right: 50px;
   span{
-    color: $red;
+    color:$red;
   }
 }
 
 .header__btn {
-  padding: 4px;
-  width: 72px;
-  border-radius: 4px;
-  text-align: center;
   color: #fff;
-  font-size: 12px;
-}
-
-.header__btn-login {
-  background-color: $green;
-}
-
-.header__btn-Register {
-  background-color: $red;
-  margin-left: 7px;
+  width: 72px;
+  padding: 4px;
+  text-align: center;
+  border-radius:4px;
+  &-login{
+    background-color: $green;
+  }
+  &-Register{
+    background-color: $red;
+    margin-left: 7px; 
+  }   
 }
 
 .header__menu {
-  background-color: $bg;  
+  background-color: $bg;
 }
 
-.menu {
+.menu{
   display: flex;
-  align-items: center;
   height: 60px;
+  align-items: center;
 }
 
 .menu__list {
   li{
     display: inline-block;
-    & + li{
+    &+li{
       margin-left: 40px;
     }
-  }
-  a{
-    color:#fff;
-    font-size: 14px;
+    a{
+      color: #fff;
+      font-size: 14px;
+    }
   }
 }
+
+.search {
+  min-height: 530px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.search__inner {
+  color: #fff;
+  padding: 155px 160px;
+  text-align: center;
+  &-title{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+  }
+  &-text{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 45px;
+  }
+  &-form{
+    max-width: 670px;
+    margin: 0 auto;
+    position: relative;
+    input{
+      display: block;
+      height: 56px;
+      width: 100%;
+      border-radius:4px;
+      border:none;
+      outline: none;
+      padding-left: 25px;
+      padding-right: 60px;
+      box-shadow: 0.5px 0.866px 10px 0px rgba(124, 178, 64, 0.75);
+      &::placeholder{
+        color: #90a4ae;
+        font-weight: 500;  
+      }
+    }
+    button{
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      background-color: transparent;
+      border:none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.products {
+  padding: 120px 0 100px;
+  background-color:$gray;
+}
+
+.products__inner-title {
+  color: $bg;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+}
+
+.products__inner-btn {
+  text-align: center;
+  padding: 60px 0;
+  button{
+    border:none;
+    outline: none;
+    padding: 12px 20px;
+    background-color: #fff;
+    color: $bg;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+.products__inner-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.products__item{
+  max-width: 442px;
+  width: 100%;
+  // box-shadow: 0.5px 0.866px 2px 0px rgba(205, 214, 222, 0.75);
+  &-img{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 250px;
+  display: block;
+  margin-bottom: 30px;
+  }  
+  &-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;  
+    min-height: 90px;
+    border-bottom: 1px solid #e7e7e8;     
+  }
+  &-name{    
+    max-width: 310px;
+  }
+  &-title{
+    color: $bg;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+  }
+  &-category{
+    color: $green;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;        
+  }
+  &-price{
+    color: $bg;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    min-height: 70px;
+    align-items: center;    
+  }
+  &-author{
+    display: flex;
+    align-items: center;        
+    .avatar{
+      width: 30px;
+      height: 30px;
+      border-radius:50%;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 14px;      
+    } 
+    span{
+    color: $text;
+    font-size: 14px;
+    font-weight: 500;
+    }
+    &-star{
+      font-size: 30px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
