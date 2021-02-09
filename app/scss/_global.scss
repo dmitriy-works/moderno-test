@@ -28,6 +28,14 @@ li {
   list-style: none;
 }
 
+.title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 700;
+  color: $bg;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -46,4 +54,10 @@ li {
   font-weight: 700;
   line-height: 60px;
   text-align: center;
+  margin-bottom: 56px;
+}
+
+.rate-star{
+  display: inline-block;
+  margin-right: 13px;  
 }
